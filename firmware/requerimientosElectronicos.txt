@@ -1,0 +1,10 @@
+Procesador : ESP32
+Actuadores: 2 humidificadores 5Vdc, 12 ventiadores 12Vdc, 
+	    6 luces led 12Vdc, 2 motobombas 12 Vdc, 1 resistencias de 
+	    calentamiento 120 Vac
+Sensores: 3 dht22 -> temperatura y humedad del aire 5V o 3.3Vdc
+	  3 MQ135  -> dioxido de carbono 5 Vdc
+	  2 SH2 -> sensor humedad del suelo 3.3Vdc
+	  * deben poder encenderse y apagarse en la medición 
+ 
+
