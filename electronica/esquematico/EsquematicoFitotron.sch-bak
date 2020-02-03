@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32D U?
+U 1 1 5E38146C
+P 1950 2100
+F 0 "U?" H 1950 3681 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 1950 3590 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 1950 600 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1650 2150 50  0001 C CNN
+	1    1950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v2.x ArduinoNano
+U 1 1 5E383471
+P 9300 2100
+F 0 "ArduinoNano" H 8850 1150 50  0000 C CNN
+F 1 "Arduino Como Multiplexo" H 9300 920 50  0001 C CNN
+F 2 "Module:Arduino_Nano" H 9450 1150 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 9300 1100 50  0001 C CNN
+	1    9300 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1800 0    50   Input ~ 0
+V1
+Text GLabel 8800 1900 0    50   Input ~ 0
+V2
+Text GLabel 8800 2000 0    50   Input ~ 0
+V3
+Text GLabel 8800 2100 0    50   Input ~ 0
+V4
+Text GLabel 8800 2200 0    50   Input ~ 0
+V5
+Text GLabel 8800 2300 0    50   Input ~ 0
+V6
+Text GLabel 8800 2400 0    50   Input ~ 0
+V7
+Text GLabel 8800 2500 0    50   Input ~ 0
+V8
+Text GLabel 8800 2600 0    50   Input ~ 0
+V9
+Text GLabel 8800 2700 0    50   Input ~ 0
+V10
+Text GLabel 8800 1700 0    50   Input ~ 0
+H1
+Text GLabel 9800 2100 2    50   Input ~ 0
+L1
+Text GLabel 9800 2200 2    50   Input ~ 0
+L2
+Text GLabel 9800 2300 2    50   Input ~ 0
+L3
+Text GLabel 9800 2400 2    50   Input ~ 0
+L4
+Text GLabel 9800 2500 2    50   Input ~ 0
+L5
+Text GLabel 9800 2600 2    50   Input ~ 0
+SistemaDeCalentamiento
+Text GLabel 9800 2700 2    50   Input ~ 0
+M1
+Text GLabel 9800 2800 2    50   Input ~ 0
+M2
+Text GLabel 8800 2800 0    50   Input ~ 0
+H2
+Text GLabel 8800 1500 0    50   Input ~ 0
+TxEsp32
+Text GLabel 8800 1600 0    50   Input ~ 0
+RxEsp32
+$Comp
+L power:+5V #PWR?
+U 1 1 5E39A2ED
+P 9200 1100
+F 0 "#PWR?" H 9200 950 50  0001 C CNN
+F 1 "+5V" H 9215 1273 50  0000 C CNN
+F 2 "" H 9200 1100 50  0001 C CNN
+F 3 "" H 9200 1100 50  0001 C CNN
+	1    9200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5E39A98D
+P 9300 3100
+F 0 "#PWR?" H 9300 2850 50  0001 C CNN
+F 1 "GNDREF" H 9305 2927 50  0000 C CNN
+F 2 "" H 9300 3100 50  0001 C CNN
+F 3 "" H 9300 3100 50  0001 C CNN
+	1    9300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:4N35 Octo1
+U 1 1 5E3ABA8F
+P 2600 5500
+F 0 "Octo1" H 2600 5825 50  0000 C CNN
+F 1 "4N33" H 2600 5734 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 2400 5300 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 2600 5500 50  0001 L CNN
+	1    2600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP41 T1
+U 1 1 5E3AC25D
+P 3450 5600
+F 0 "T1" H 3641 5646 50  0000 L CNN
+F 1 "TIP31C" H 3641 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3700 5525 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 3450 5600 50  0001 L CNN
+	1    3450 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E3ACE7A
+P 2150 5400
+F 0 "R1" V 2357 5400 50  0000 C CNN
+F 1 "220" V 2266 5400 50  0000 C CNN
+F 2 "" V 2080 5400 50  0001 C CNN
+F 3 "~" H 2150 5400 50  0001 C CNN
+	1    2150 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E3AD43B
+P 3100 5600
+F 0 "R2" V 3000 5600 50  0000 C CNN
+F 1 "1000" V 2900 5600 50  0000 C CNN
+F 2 "" V 3030 5600 50  0001 C CNN
+F 3 "~" H 3100 5600 50  0001 C CNN
+	1    3100 5600
+	0    -1   -1   0   
+$EndComp
+Text Notes 10250 1450 0    50   ~ 0
+H : Humidificador\nV : Ventilador\nL : Luz led\nM: Motobomba
+Text Notes 8250 3600 0    59   ~ 0
+Nota: para el control de las etapas de potencia\n(encendido y apagado de fuentes, se hara desde el esp32)
+Text Notes 8050 800  0    207  ~ 0
+Control Actuadores\n
+Wire Notes Line
+	7850 500  7850 3700
+Wire Notes Line
+	7850 3700 11250 3700
+Text GLabel 2000 5400 0    50   Input ~ 0
+V1
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5E3C905B
+P 2300 5600
+F 0 "#PWR?" H 2300 5350 50  0001 C CNN
+F 1 "GNDREF" H 2305 5427 50  0000 C CNN
+F 2 "" H 2300 5600 50  0001 C CNN
+F 3 "" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA GND12V
+U 1 1 5E3CAC36
+P 3550 5800
+F 0 "GND12V" H 3550 5550 50  0001 C CNN
+F 1 "GNDA" H 3638 5763 50  0000 L CNN
+F 2 "" H 3550 5800 50  0001 C CNN
+F 3 "" H 3550 5800 50  0001 C CNN
+	1    3550 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 5150 2    50   Input ~ 0
+V1+
+Text GLabel 3550 5250 2    50   Input ~ 0
+V1-
+$Comp
+L power:+12V #PWR?
+U 1 1 5E3CFA17
+P 3300 5100
+F 0 "#PWR?" H 3300 4950 50  0001 C CNN
+F 1 "+12V" H 3315 5273 50  0000 C CNN
+F 2 "" H 3300 5100 50  0001 C CNN
+F 3 "" H 3300 5100 50  0001 C CNN
+	1    3300 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5500 3000 5500
+Wire Wire Line
+	3000 5500 3000 5150
+Wire Wire Line
+	3000 5150 3300 5150
+Wire Wire Line
+	3550 5250 3550 5400
+Wire Wire Line
+	3300 5100 3300 5150
+Connection ~ 3300 5150
+Wire Wire Line
+	3300 5150 3550 5150
+$EndSCHEMATC
