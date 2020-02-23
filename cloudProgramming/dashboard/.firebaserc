@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "iot-fitotron": {
+      "hosting": {
+        "dashboard": [
+          "iot-fitotron"
+        ]
+      }
+    }
+  }
+}
