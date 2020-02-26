@@ -11,8 +11,8 @@ export class DataFitotronService {
    }
 
    listarDatos() {
-    this.dataFito = this.db.list('dataFitotron');
-    console.log(this.dataFito);
+    this.dataFito = this.db.list('dataFitotron'); //recibir los datos de la lista datFitotron
+    // console.log(this.dataFito);
     
     return this.dataFito;
   } 

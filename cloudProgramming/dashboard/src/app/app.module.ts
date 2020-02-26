@@ -12,12 +12,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import {environment} from '../environments/environment';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),

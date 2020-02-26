@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 declare interface RouteInfo {
   path: string;
   title: string;
-  rtlTitle: string;
   icon: string;
   class: string;
 }
@@ -11,16 +10,14 @@ export const ROUTES: RouteInfo[] = [
   {
     path: "/dashboard",
     title: "Dashboard",
-    rtlTitle: "لوحة القيادة",
     icon: "icon-chart-pie-36",
     class: ""
    }
    ,
   {
-    path: "/icons",
-    title: "Icons",
-    rtlTitle: "الرموز",
-    icon: "icon-atom",
+    path: "/control-manual",
+    title: "Control Manual",
+    icon: "icon-bulb-63",
     class: ""
   }
 ]
