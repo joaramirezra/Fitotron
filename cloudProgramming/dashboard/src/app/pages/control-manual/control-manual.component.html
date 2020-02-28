@@ -1,5 +1,44 @@
 <div class=" content">
+<div class=" row">
+    <div class=" col-lg-3 col-md-0"></div>
 
+    <div class=" col-lg-6 col-md-12">
+        <div class=" card card-tasks">
+          <div class=" card-header">
+            <h6 class=" title d-inline">Actuadores</h6>
+            <p class=" card-category d-inline">fitotron</p>
+          </div>
+                      
+          <div class=" card-body">
+            <div class=" table-full-width table-responsive">
+              <table class=" table">
+                <tbody>
+                  <tr *ngFor="let actuator of dataAtuators">
+                    <td>
+                      <div class=" form-check">
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">{{actuator.name}} </p>
+                      <!-- <p class=" text-muted">
+                        {{actuator.name}} sub
+                      </p> -->
+                    </td>
+                    <td class=" td-actions text-right">
+                    <mat-slide-toggle [name]="actuator.name" (change)="onChange($event)">
+                        {{actuator.state}}</mat-slide-toggle> 
+                    </td>
+                  </tr>
+                </tbody>
+               </table>
+              </div>
+          </div>
 
-    
+        </div>
+      </div>
+
+      <div class=" col-lg-3 col-md-0"></div>
+    </div>
+
+    <button (click)="getActuators()">data</button>
 </div>
