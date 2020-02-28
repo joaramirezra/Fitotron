@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
   constructor(private dataService: DataFitotronService) { }
 
   ngOnInit() {
-    this.dataState();
+    this.initDataSensor();
 
      // Datos de prueba
      var labelsPrueba = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
@@ -94,9 +94,9 @@ export class DashboardComponent implements OnInit {
     this.myChartData.update();
   }
 
-  async dataState() {     
+  async initDataSensor() {     
 
-    await this.dataService.listarDatos().snapshotChanges().subscribe(data => {
+    await this.dataService.getDataSensors().snapshotChanges().subscribe(data => {
       console.log("dataState ->", data);
       this.dataSensor = [];
       data.forEach(item => {
