@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4475 2075 2    50   Input ~ 0
+DHT_I3
+Text GLabel 4480 2275 2    50   Input ~ 0
+DHT_I3
+Wire Wire Line
+	4425 2075 4475 2075
+Wire Wire Line
+	4425 1875 4900 1875
+Wire Wire Line
+	4425 1775 4475 1775
+Wire Wire Line
+	4475 1675 4425 1675
+Wire Wire Line
+	4475 1625 4475 1675
+Wire Wire Line
+	2825 2100 2900 2100
+$Comp
+L Connector:RJ45 J?
+U 1 1 5E9462C7
+P 2425 2100
+AR Path="/5E9462C7" Ref="J?"  Part="1" 
+AR Path="/5E7D4FD5/5E9462C7" Ref="J?"  Part="1" 
+AR Path="/5E92B3E7/5E9462C7" Ref="J9"  Part="1" 
+F 0 "J9" H 2482 2767 50  0000 C CNN
+F 1 "RJ45" H 2482 2676 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJHSE5380" V 2425 2125 50  0001 C CNN
+F 3 "~" V 2425 2125 50  0001 C CNN
+	1    2425 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 2000 2875 2000
+Wire Wire Line
+	2825 1700 2900 1700
+Wire Wire Line
+	2825 1900 2875 1900
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9462D5
+P 2900 1675
+AR Path="/5E9462D5" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E9462D5" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 2900 1525 50  0001 C CNN
+F 1 "+5V" H 2915 1848 50  0000 C CNN
+F 2 "" H 2900 1675 50  0001 C CNN
+F 3 "" H 2900 1675 50  0001 C CNN
+	1    2900 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1700 2900 1675
+Text GLabel 2900 2100 2    50   Input ~ 0
+DHT_I1
+Wire Wire Line
+	2790 3075 3325 3075
+Wire Wire Line
+	2790 3275 2875 3275
+Wire Wire Line
+	2790 2975 3325 2975
+$Comp
+L Connector:RJ45 J?
+U 1 1 5E9462E3
+P 4025 2075
+AR Path="/5E9462E3" Ref="J?"  Part="1" 
+AR Path="/5E7D4FD5/5E9462E3" Ref="J?"  Part="1" 
+AR Path="/5E92B3E7/5E9462E3" Ref="J10"  Part="1" 
+F 0 "J10" H 4082 2742 50  0000 C CNN
+F 1 "RJ45" H 4082 2651 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJHSE5380" V 4025 2100 50  0001 C CNN
+F 3 "~" V 4025 2100 50  0001 C CNN
+	1    4025 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9462E9
+P 4475 1625
+AR Path="/5E9462E9" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E9462E9" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 4475 1475 50  0001 C CNN
+F 1 "+5V" H 4490 1798 50  0000 C CNN
+F 2 "" H 4475 1625 50  0001 C CNN
+F 3 "" H 4475 1625 50  0001 C CNN
+	1    4475 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9462EF
+P 4900 1980
+AR Path="/5E9462EF" Ref="#PWR?"  Part="1" 
+AR Path="/5E7D4FD5/5E9462EF" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E9462EF" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 4900 1730 50  0001 C CNN
+F 1 "GND" H 4905 1807 50  0000 C CNN
+F 2 "" H 4900 1980 50  0001 C CNN
+F 3 "" H 4900 1980 50  0001 C CNN
+	1    4900 1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45 J?
+U 1 1 5E9462F5
+P 2390 3375
+AR Path="/5E9462F5" Ref="J?"  Part="1" 
+AR Path="/5E7D4FD5/5E9462F5" Ref="J?"  Part="1" 
+AR Path="/5E92B3E7/5E9462F5" Ref="J8"  Part="1" 
+F 0 "J8" H 2447 4042 50  0000 C CNN
+F 1 "RJ45" H 2447 3951 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_RJHSE5380" V 2390 3400 50  0001 C CNN
+F 3 "~" V 2390 3400 50  0001 C CNN
+	1    2390 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 3075 3325 3150
+Connection ~ 3325 3075
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9462FE
+P 2875 3275
+AR Path="/5E9462FE" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E9462FE" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 2875 3125 50  0001 C CNN
+F 1 "+5V" H 2890 3448 50  0000 C CNN
+F 2 "" H 2875 3275 50  0001 C CNN
+F 3 "" H 2875 3275 50  0001 C CNN
+	1    2875 3275
+	0    1    1    0   
+$EndComp
+Text GLabel 2925 3375 2    50   Input ~ 0
+SH_I1
+$Comp
+L power:GND #PWR?
+U 1 1 5E94630C
+P 3325 3150
+AR Path="/5E94630C" Ref="#PWR?"  Part="1" 
+AR Path="/5E7D4FD5/5E94630C" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E94630C" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 3325 2900 50  0001 C CNN
+F 1 "GND" H 3330 2977 50  0000 C CNN
+F 2 "" H 3325 3150 50  0001 C CNN
+F 3 "" H 3325 3150 50  0001 C CNN
+	1    3325 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2865 3575 2    50   Input ~ 0
+SH_I2
+Text GLabel 2885 2300 2    50   Input ~ 0
+DHT_I2
+$Comp
+L power:GND #PWR?
+U 1 1 5E94631A
+P 3325 1900
+AR Path="/5E94631A" Ref="#PWR?"  Part="1" 
+AR Path="/5E7D4FD5/5E94631A" Ref="#PWR?"  Part="1" 
+AR Path="/5E92B3E7/5E94631A" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 3325 1650 50  0001 C CNN
+F 1 "GND" H 3330 1727 50  0000 C CNN
+F 2 "" H 3325 1900 50  0001 C CNN
+F 3 "" H 3325 1900 50  0001 C CNN
+	1    3325 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2790 3375 2925 3375
+Wire Wire Line
+	2790 3575 2865 3575
+Wire Wire Line
+	3325 2975 3325 3075
+Wire Wire Line
+	2790 3175 2875 3175
+Wire Wire Line
+	2875 3175 2875 3275
+Connection ~ 2875 3275
+Wire Wire Line
+	2825 2300 2885 2300
+Wire Wire Line
+	2900 1800 2900 1700
+Connection ~ 2900 1700
+Wire Wire Line
+	2875 2000 2875 1900
+Connection ~ 2875 1900
+Wire Wire Line
+	2875 1900 3325 1900
+Wire Wire Line
+	2825 1800 2900 1800
+Wire Wire Line
+	4905 1975 4905 1980
+Wire Wire Line
+	4905 1980 4900 1980
+Wire Wire Line
+	4425 1975 4905 1975
+Wire Wire Line
+	4900 1875 4900 1980
+Connection ~ 4900 1980
+Wire Wire Line
+	4425 2275 4480 2275
+Wire Wire Line
+	4475 1775 4475 1675
+Connection ~ 4475 1675
+$EndSCHEMATC
