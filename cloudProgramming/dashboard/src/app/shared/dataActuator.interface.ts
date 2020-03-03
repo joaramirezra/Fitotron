@@ -1,5 +1,5 @@
 export interface DataActuatorI{
     id:string,
-    name:string,
+    name?:string,
     state:boolean
 }

@@ -10,30 +10,29 @@ import { DataActuatorI } from '../../shared/dataActuator.interface';
 })
 export class ControlManualComponent implements OnInit {
   dataAtuators = [];
-  actuatorPrueba:DataActuatorI[];
-
   constructor(private dataService: DataFitotronService) { }
 
   ngOnInit() {
     this.initDataSensor();
   }
 
-  onChange(ob: MatSlideToggleChange) {
+  onChange(ob: MatSlideToggleChange, actToSend:DataActuatorI) {
     let matSlideToggle: MatSlideToggle = ob.source;
-    console.log(ob.checked);
-    console.log(matSlideToggle.name);
-    
-  }
-
-  getActuators(){
-    var prueba:DataActuatorI={
-      id:'fan8',
-      name:'Ventilador 8',
-      state:true
+    if (matSlideToggle.name==="checkAll"){
+      this.dataAtuators.forEach(actuator=>{//envia cada actuador a firebase
+        actuator.state=ob.checked
+        this.dataService.setDataAtuator(actuator);
+      })
+      console.log("check all");
     }
-    // this.actuatorPrueba.push(prueba)
-    console.log(prueba);
-    this.dataService.setDataAtuator(prueba);
+    else {
+      let actSend : DataActuatorI={ //definde el actuador a modificar
+        id:actToSend.id,
+        state:ob.checked,
+        name:matSlideToggle.name
+      }
+      this.dataService.setDataAtuator(actSend); //envia el actuador a firebase
+    }
     
   }
 
@@ -44,8 +43,7 @@ export class ControlManualComponent implements OnInit {
         let a = item.payload.toJSON(); 
         a['id'] = item.key;        
         this.dataAtuators.push(a as DataActuatorI);
-        console.log(a);
-        
+        // console.log(a);
       });
     });
   }

@@ -6,7 +6,16 @@
         <div class=" card card-tasks">
           <div class=" card-header">
             <h6 class=" title d-inline">Actuadores</h6>
-            <p class=" card-category d-inline">fitotron</p>
+            <p class=" card-category d-inline">fitotrón</p>
+
+            <div style="text-align: right">
+              <mat-slide-toggle name="checkAll"
+              labelPosition="before" color="primary" 
+              (change)="onChange($event,null)"
+                >
+                ALL
+              </mat-slide-toggle> 
+            </div>
           </div>
                       
           <div class=" card-body">
@@ -20,13 +29,15 @@
                     </td>
                     <td>
                       <p class=" title">{{actuator.name}} </p>
-                      <!-- <p class=" text-muted">
-                        {{actuator.name}} sub
-                      </p> -->
                     </td>
                     <td class=" td-actions text-right">
-                    <mat-slide-toggle [name]="actuator.name" (change)="onChange($event)">
-                        {{actuator.state}}</mat-slide-toggle> 
+                    <mat-slide-toggle labelPosition="before" color="primary" 
+                    [name]="actuator.name" (change)="onChange($event,actuator)"
+                    [checked] = "actuator.state"  >
+                    <p *ngIf="actuator.state; else off">
+                      ON
+                    </p>
+                        </mat-slide-toggle> 
                     </td>
                   </tr>
                 </tbody>
@@ -39,6 +50,11 @@
 
       <div class=" col-lg-3 col-md-0"></div>
     </div>
-
-    <button (click)="getActuators()">data</button>
 </div>
+
+
+<ng-template #off>
+  <p>
+    OFF
+  </p>
+</ng-template>

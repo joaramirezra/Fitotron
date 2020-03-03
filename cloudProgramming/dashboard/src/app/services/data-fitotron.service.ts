@@ -27,8 +27,9 @@ export class DataFitotronService {
   }
 
   setDataAtuator(actuator:DataActuatorI){
-    this.db.database.ref('actuatorsFitotron/'+actuator.name).set({
-      state:actuator.state
+    this.db.database.ref('actuatorsFitotron/'+actuator.id).set({
+      state:actuator.state,
+      name:actuator.name
     })
   }
 
