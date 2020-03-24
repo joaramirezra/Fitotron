@@ -1,0 +1,17 @@
+Reference(s);Value;LibPart;Store;Footprint;
+C1;100nF;Device:C_Small;;Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+C2, C3;10uF;Device:C_Small;;Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+D1;BTA16;Device:Q_TRIAC_A1A2G;;Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown;
+J1, J2;Bornera Resorte;Connector_Generic:Conn_01x08;;potenciaFootprints:BorneraKF141R_8Pins;
+J3;Bornera Resorte;Connector_Generic:Conn_01x04;;potenciaFootprints:BorneraKF141R_4Pins;
+J4;Bornera 4 pines;Connector:Screw_Terminal_01x04;;TerminalBlock:TerminalBlock_Altech_AK300-4_P5.00mm;
+J5;Header;Connector_Generic:Conn_01x04;;Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+Q1, Q2, Q3;MMBT2222;Transistor_BJT:MMBT3904;;Package_TO_SOT_SMD:SOT-23;
+R1;10K;Device:R_US;;Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+R2;470;Device:R_US;;Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+R3, R4, R5;1K;Device:R_US;;Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+R6;100;Device:R_US;;Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal;
+U1;ATmega328-PU;MCU_Microchip_ATmega:ATmega328-PU;;Package_DIP:DIP-28_W7.62mm;
+U2, U3;ULN2003;Transistor_Array:ULN2003;;Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm;
+U4;MOC3031M;Relay_SolidState:MOC3031M;;Package_DIP:DIP-6_W7.62mm_LongPads;
+Y1;Crystal;Device:Crystal;;Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm;
