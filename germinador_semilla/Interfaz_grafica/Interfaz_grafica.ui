@@ -49,7 +49,7 @@ background-color: rgb(114, 159, 207);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -112,7 +112,7 @@ background-color: rgb(114, 159, 207);</string>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
            <widget class="QLabel" name="label_hora_inicio">
@@ -133,7 +133,7 @@ color: rgb(255, 255, 255);</string>
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
            <widget class="QLabel" name="label_hora_fin">
@@ -174,7 +174,7 @@ color: rgb(255, 255, 255);</string>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
            <widget class="QLabel" name="label_horas_freq">
@@ -191,11 +191,15 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="input_horas_freq"/>
+           <widget class="QSpinBox" name="input_horas_freq">
+            <property name="maximum">
+             <number>23</number>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
-        <widget class="QWidget" name="">
+        <widget class="QWidget" name="layoutWidget">
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
            <widget class="QLabel" name="label_minutos_freq">
@@ -212,7 +216,11 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="input_minutos_freq"/>
+           <widget class="QSpinBox" name="input_minutos_freq">
+            <property name="maximum">
+             <number>60</number>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -361,7 +369,7 @@ background-color: rgb(114, 159, 207);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>340</x>
