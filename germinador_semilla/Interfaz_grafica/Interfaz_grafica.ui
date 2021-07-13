@@ -79,12 +79,12 @@ background-color: rgb(114, 159, 207);</string>
         </property>
         <item>
          <property name="text">
-          <string>Iluminación</string>
+          <string>Iluminacion</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Ventilación</string>
+          <string>Ventilacion</string>
          </property>
         </item>
         <item>
@@ -290,12 +290,7 @@ color: rgb(255, 255, 255);</string>
     </row>
     <column>
      <property name="text">
-      <string>Propiedad</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Riego</string>
+      <string> </string>
      </property>
     </column>
     <column>
@@ -308,9 +303,29 @@ color: rgb(255, 255, 255);</string>
       <string>Ventilación</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Riego</string>
+     </property>
+    </column>
     <item row="0" column="0">
      <property name="text">
       <string>Inicio</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string> </string>
      </property>
     </item>
     <item row="1" column="0">
@@ -318,14 +333,59 @@ color: rgb(255, 255, 255);</string>
       <string>Fin</string>
      </property>
     </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
     <item row="2" column="0">
      <property name="text">
       <string>Frecuencia</string>
      </property>
     </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
     <item row="3" column="0">
      <property name="text">
       <string>Proxima</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string> </string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string> </string>
      </property>
     </item>
    </widget>

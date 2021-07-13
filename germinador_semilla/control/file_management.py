@@ -43,7 +43,7 @@ def read_parameters():
     return read_file('parameters.csv')
 
 def fill_paramater():
-    parameters = ['RIEGO','VENTILACION','ILUMINACION']
+    parameters = ['ILUMINACION','VENTILACION','RIEGO']
     name = 'parameters.csv'
     for parameter in parameters:
         values = [parameter]+[' ',' ',' ',' ']
@@ -60,6 +60,6 @@ def change_parameters(variable,parameters):
 
 #-------------------------------------------------------------------------------
 # create_files()
-change_parameters('VENTILACION',[15,6,19,88])
-print(read_parameters())
-print('#'+'-'*79)
+# change_parameters('VENTILACION',[15,6,19,88])
+# print(read_parameters())
+# print('#'+'-'*79)
