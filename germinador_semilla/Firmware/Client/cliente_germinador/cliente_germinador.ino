@@ -14,11 +14,11 @@ char msg[50];
 int value = 0;
 
 void setup() {
-  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output 
   Serial.begin(9600);
   setup_wifi();
-//  client.setServer(mqtt_server, 1883);
-//  client.setCallback(callback);
+  client.setServer(mqtt_server, 1883);
+  client.setCallback(callback);
 }
 
 void setup_wifi() {
@@ -49,13 +49,9 @@ void callback(char* topic, byte* payload, unsigned int length) {
   for (int i = 0; i < length; i++) {
     Serial.print((char)payload[i]);
   }
-  Serial.println();
-
-  // Switch on the LED if an 1 was received as first character
+  Serial.println();--
   if ((char)payload[0] == '1') {
-    digitalWrite(BUILTIN_LED, LOW);   // Turn the LED on (Note that LOW is the voltage level
-    // but actually the LED is on; this is because
-    // it is acive low on the ESP-01)
+    digitalWrite(BUILTIN_LED, LOW);   
   } else {
     digitalWrite(BUILTIN_LED, HIGH);  // Turn the LED off by making the voltage HIGH
   }
@@ -82,6 +78,15 @@ void reconnect() {
     }
   }
 }
+
+
+
+void configurar_pines(){
+  
+  
+  }
+
+
 
 void loop() {
 
