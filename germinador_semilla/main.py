@@ -9,6 +9,7 @@ class interfaz(Ui_main_windows):
     def __init__( self ):
         super().__init__()
 
+
     def setupUi( self, MW ):
         super().setupUi( MW )
         self.update_interface ()
