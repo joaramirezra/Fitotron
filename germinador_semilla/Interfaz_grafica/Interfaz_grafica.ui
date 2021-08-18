@@ -162,7 +162,7 @@ color: rgb(255, 255, 255);</string>
          <string notr="true">color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
-         <string>Frecuencia de ocurrencia</string>
+         <string>parametros ocurrencia</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -183,7 +183,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>Horas</string>
+             <string>Frecuencia (min)</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -208,7 +208,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
             </property>
             <property name="text">
-             <string>Minutos</string>
+             <string>Duracion(min)</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -229,7 +229,7 @@ color: rgb(255, 255, 255);</string>
       <item>
        <widget class="QPushButton" name="boton_configurar">
         <property name="text">
-         <string>PushButton</string>
+         <string>Configurar</string>
         </property>
        </widget>
       </item>
@@ -290,7 +290,7 @@ color: rgb(255, 255, 255);</string>
     </row>
     <column>
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </column>
     <column>
@@ -315,17 +315,17 @@ color: rgb(255, 255, 255);</string>
     </item>
     <item row="0" column="1">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="0" column="2">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="0" column="3">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="1" column="0">
@@ -335,17 +335,17 @@ color: rgb(255, 255, 255);</string>
     </item>
     <item row="1" column="1">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="1" column="2">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="1" column="3">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="2" column="0">
@@ -355,37 +355,37 @@ color: rgb(255, 255, 255);</string>
     </item>
     <item row="2" column="1">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="2" column="2">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="2" column="3">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="3" column="0">
      <property name="text">
-      <string>Proxima</string>
+      <string>duracion</string>
      </property>
     </item>
     <item row="3" column="1">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="3" column="2">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
     <item row="3" column="3">
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </item>
    </widget>
@@ -403,7 +403,7 @@ color: rgb(255, 255, 255);</string>
 background-color: rgb(114, 159, 207);</string>
     </property>
     <property name="text">
-     <string>mediciones</string>
+     <string>Mediciones</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
