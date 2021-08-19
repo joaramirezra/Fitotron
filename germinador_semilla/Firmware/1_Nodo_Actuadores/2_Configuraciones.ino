@@ -1,12 +1,13 @@
 void configurar_pines() {
-  pinMode(motor, OUTPUT);
+  pinMode(iluminacion, OUTPUT);
   pinMode(riego, OUTPUT);
   pinMode(ventilador, OUTPUT);
 }
 
 void configurar_serial() {
   Serial.begin(9600);
-  Serial.print("hola Gente");
+  delay(1000);
+  Serial.print("comunicacion ok");
 }
 
 void setup_wifi() {
