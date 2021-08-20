@@ -2,7 +2,7 @@
 ### version : 0.2
 ### Fecha : 15/04/2020
 
-**Antecedentes:** En el marco de la discusión de la propuesta del proyecto de ley sobre  regulación del consumo de cannabis con usos recreativo en Colombia, se han desarrollado debates en variados ámbitos algunos versan alrededor del cultivo,impacto economico, social, cultural  entre otros, por lo anterior se desarrolla un sistema de germinacion de semillas de cannabis, para poder impactar de manera positiva las primeras fases de la planta y con ellos contribuir en fases posteriores de crecimiento y cosecha.
+**Antecedentes:** En el marco de la discusión de la propuesta del proyecto de ley sobre  regulación del consumo de cannabis con usos recreativo en Colombia, se han desarrollado debates en variados ámbitos algunos versan alrededor del cultivo,iacto economico, social, cultural  entre otros, por lo anterior se desarrolla un sistema de germinacion de semillas de cannabis, para poder impactar de manera positiva las primeras fases de la planta y con ellos contribuir en fases posteriores de crecimiento y cosecha.
 
 **Descripción:**
 
